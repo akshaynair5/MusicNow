@@ -6,8 +6,104 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.hero{
+  width:100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.content{
+  width:85%;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.searchbox{
+  position: absolute;
+  left:15%;
+  height:30%;
+  background-color:darkcyan;
+  width:85%;
+}
+  /* .headings{
+    position: absolute;
+    left:30%;
+  } */
+.navbar{
+  position:fixed;
+  height:100%;
+  background-color: blueviolet;
+  width:15%;
+}
+.navbar .inputs{
+  display:flex;
+  flex-direction: column;
+  width:90%;
+  position:absolute;
+  height: 100%;
+  top:33%;
+}
+.inputs input{
+  color:azure;
+  padding:4%;
+  margin:5%;
+  background-color: blueviolet;
+  border-color: blueviolet;
+  border-style: none;
+  font-size: 25px;
+}
+.inputs input:hover{
+  font-size: 28px;
+}
+
+.content{
+
+  display: flex;
+  flex-direction: column;
+}
+.latestsongs img{
+  margin: 4%;
+  border-radius: 15px;
+  width:90%;
+  height:80%;
+}
+.songCard{
+  scroll-snap-align: start;
+  text-align: center;
+  margin: 2%;
+  width:15%;
+  border-radius: 15px;
+  height: fit-content;
+}
+.songCard:hover{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transition: 0.5s;
+}
+.songCard p{
+  font-size: 25px;
+  font-weight: 600;
+}
+.latestsongs{
+  display:flex;
+  top:40%;
+  position: absolute;
+  left:20%;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+}
+.playlistsongs{
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  display:inline-flex;
+  flex-wrap:wrap;
+  top:80%;
+  position: absolute;
+  left:20%;
+}
+.playlistsongs img{
+  margin: 4%;
+  border-radius: 15px;
+  width:90%;
+  height:80%;
 }
