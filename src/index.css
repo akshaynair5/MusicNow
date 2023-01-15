@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(0, 0, 0, 0.046);
 }
 .hero{
   width:100%;
@@ -23,7 +24,9 @@ code {
   position: absolute;
   left:15%;
   height:35%;
-  background-color:darkcyan;
+  /* background-color:darkcyan; */
+  background-size: 100% 100%;
+  background-image: url("searchbarbg.jpeg");
   width:85%;
 }
 .searchResultTab{
@@ -43,7 +46,7 @@ code {
 .navbar{
   position:fixed;
   height:100%;
-  background-color: blueviolet;
+  background-color:rgba(0, 0, 0, 0.557);
   width:15%;
 }
 .navbar .inputs{
@@ -58,12 +61,13 @@ code {
   color:azure;
   padding:4%;
   margin:5%;
-  background-color: blueviolet;
-  border-color: blueviolet;
+  background-color: transparent;
+  border-color:transparent;
   border-style: none;
   font-size: 25px;
 }
 .inputs input:hover{
+  transition: 0.5s;
   font-size: 28px;
 }
 
@@ -85,6 +89,7 @@ code {
   width:15%;
   border-radius: 15px;
   height: fit-content;
+  margin-top: 5%;
 }
 .songCard:hover{
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -95,25 +100,52 @@ code {
   font-weight: 600;
 }
 .latestsongs{
+  background-color: transparent;
+  width:80%;
   display:flex;
-  top:40%;
+  top:50%;
   position: absolute;
   left:20%;
   overflow: auto;
   scroll-snap-type: x mandatory;
 }
-.playlistsongs{
+.favouritesongs{
+  background-color: transparent;
+  width:80%;
   overflow: auto;
   scroll-snap-type: x mandatory;
   display:inline-flex;
   flex-wrap:wrap;
-  top:80%;
+  top:110%;
   position: absolute;
   left:20%;
 }
-.playlistsongs img{
+.favouritesongs img{
   margin: 4%;
   border-radius: 15px;
   width:90%;
   height:80%;
+}
+.Playlists{
+  width:80%;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  display:inline-flex;
+  flex-wrap:wrap;
+  top:170%;
+  position: absolute;
+  left:20%;
+}
+.AddFavs{
+  background-color: transparent;
+  color: black;
+  font-size: 40px;
+  border: none;
+}
+.AddFavs:hover{
+  transition: 0.4s;
+  color:rgba(255, 255, 0, 0.511)
+}
+.lsh{
+  position: absolute;
 }
