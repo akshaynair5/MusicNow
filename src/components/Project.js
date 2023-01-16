@@ -16,7 +16,7 @@ function Navbar(){
     const [userPlaylists,setPlaylist] = useState([])
     const [plswithdata,setpldata] = useState([])
 
-    // Initilization of values needed and first call of API for initial trending songs
+    // Initialization of values needed and first call of API for initial trending songs
 
 
     useEffect(()=>{
