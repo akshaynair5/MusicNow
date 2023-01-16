@@ -24,9 +24,8 @@ code {
   position: absolute;
   left:15%;
   height:35%;
-  /* background-color:darkcyan; */
-  background-size: 100% 100%;
-  background-image: url("searchbarbg.jpeg");
+  background-size: 100% 250%;
+  background-image: url("orange-and-red-abstract-painting-2034209.jpg");
   width:85%;
 }
 .searchResultTab{
@@ -39,15 +38,13 @@ code {
   background-color: rgba(169, 169, 169, 0.429);
   border-radius: 15px;
 }
-  /* .headings{
-    position: absolute;
-    left:30%;
-  } */
 .navbar{
   position:fixed;
   height:100%;
-  background-color:rgba(0, 0, 0, 0.557);
+  background-color:rgba(255, 60, 0, 0.904);
   width:15%;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius:0px ;
 }
 .navbar .inputs{
   display:flex;
@@ -56,6 +53,7 @@ code {
   position:absolute;
   height: 100%;
   top:33%;
+  font-weight: 900;
 }
 .inputs input{
   color:azure;
@@ -64,11 +62,12 @@ code {
   background-color: transparent;
   border-color:transparent;
   border-style: none;
-  font-size: 25px;
+  font-size: 30px;
+  font-weight: 400;
 }
 .inputs input:hover{
   transition: 0.5s;
-  font-size: 28px;
+  font-size: 32px;
 }
 
 .content{
@@ -128,13 +127,40 @@ code {
 }
 .Playlists{
   width:80%;
-  overflow: auto;
-  scroll-snap-type: x mandatory;
-  display:inline-flex;
-  flex-wrap:wrap;
   top:170%;
   position: absolute;
   left:20%;
+  height:100%;
+}
+.create_playlist{
+  position: absolute;
+  left:20%;
+  background-color: orange;
+  font-size: 40px;
+  border-radius: 50%;
+  color: aliceblue;
+  border: none;
+  padding: 0.5%;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  top:0%;
+  font-weight: 600;
+}
+.create_playlist:hover{
+  transition: 0.3s;
+  font-weight: 1000;
+
+}
+.Playlists .PlaylistCard{
+  text-align: center;
+  margin: 2%;
+  width:100%;
+  border-radius: 15px;
+  height: 50%;
+  margin-top: 5%;
+  font-size: 45px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .AddFavs{
   background-color: transparent;
@@ -142,10 +168,26 @@ code {
   font-size: 40px;
   border: none;
 }
+.Addtopl{
+  background-color: orange;
+  padding:3%;
+  border-radius: 20px;
+  font-weight: 600;
+  padding-top: 4.5%;
+  margin-bottom: 2%;
+  margin-left: 2%;
+  border: none;
+}
+.Addtopl:hover{
+  font-weight: 650;
+  transition: 0.5s;
+}
 .AddFavs:hover{
   transition: 0.4s;
   color:rgba(255, 255, 0, 0.511)
 }
 .lsh{
+  cursor:default;
   position: absolute;
 }
+
