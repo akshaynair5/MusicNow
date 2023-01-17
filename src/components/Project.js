@@ -136,7 +136,7 @@ function Project(){
                 // console.log(plswithdata)
                 break;
             }
-            else{
+            else if(p!=userPlaylists[j].pname){
                 alert("playlist not found")
             }
 
@@ -199,7 +199,7 @@ function Project(){
                 <div className='searchbox' onChange={(e)=>{setSearchfor(e.target.value)}} onKeyUp={HandleEnterKeyPress}>
                     <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" style={{position:"absolute",top:"7%",width:"60%",left:"20%",height:"20%",fontSize:"20px",visibility:searchbarvis,TransitionEvent:'0.5s'}}/>
                     <div className='searchResultTab' style={{visibility:searchbarvis}}>
-                        <div className='songCard' id="srres" style={{backgroundColor:'white',padding:'1%',visibility:'hidden'}}>
+                        <div className='songCard' id="srres" style={{backgroundColor:'white',padding:'1%',visibility:'hidden',width:'200px',height:'280px'}}>
                             <input className="AddFavs" type ="button" onClick={()=>{SearchFavs()}} value="★"></input>
                             <img src={`${searchImg}`} style={{ width:'90%',height:'80%'}}></img>
                             <p>{searchRes}</p>
