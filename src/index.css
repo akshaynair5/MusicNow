@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgba(0, 0, 0, 0.046);
+  background-color:#282120;
 }
 .hero{
   width:100%;
@@ -24,14 +24,14 @@ code {
   position: absolute;
   left:15%;
   height:35%;
-  background-size: 100% 250%;
-  background-image: url("orange-and-red-abstract-painting-2034209.jpg");
+  background-size: 100% 100%;
+  background-image: url("background_img.jpg");
   width:85%;
 }
 .searchResultTab{
   position:absolute;
   top:30%;
-  width:60%;
+  width:55%;
   left:20%;
   height: fit-content;
   font-size:20px;
@@ -41,7 +41,7 @@ code {
 .navbar{
   position:fixed;
   height:100%;
-  background-color:rgba(255, 60, 0, 0.904);
+  background-color:#FAD02C;
   width:15%;
   border-bottom-right-radius: 20px;
   border-top-right-radius:0px ;
@@ -56,7 +56,7 @@ code {
   font-weight: 900;
 }
 .inputs input{
-  color:azure;
+  color:#282120;
   padding:4%;
   margin:5%;
   background-color: transparent;
@@ -70,28 +70,34 @@ code {
   font-size: 32px;
 }
 
-.content{
-
+.hero .content{
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
 }
 .latestsongs img{
   margin: 4%;
   border-radius: 15px;
-  width:90%;
-  height:80%;
+  width:260px;
+  height:280px;
 }
 .songCard{
-  scroll-snap-align: start;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom:0.5% ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   margin: 2%;
-  width:15%;
+  width:320px;
   border-radius: 15px;
-  height: fit-content;
+  height: 384px;
   margin-top: 5%;
+  background-color: #F8EFE4;
 }
 .songCard:hover{
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(255, 225, 141, 0.25) 0px 54px 55px, rgba(250, 255, 186, 0.12) 0px -12px 30px, rgba(250, 250, 209, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   transition: 0.5s;
 }
 .songCard p{
@@ -99,25 +105,29 @@ code {
   font-weight: 600;
 }
 .latestsongs{
+  overflow-y: hidden;
+  overflow-x: scroll;
   background-color: transparent;
   width:80%;
-  display:flex;
+  display:inline-flex;
+  white-space: nowrap;
   top:50%;
   position: absolute;
-  left:20%;
-  overflow: auto;
-  scroll-snap-type: x mandatory;
+  left:18%;
+  scrollbar-color: black;
 }
 .favouritesongs{
+  overflow-y: hidden;
+  overflow-x: scroll;
   background-color: transparent;
+  white-space: nowrap;
   width:80%;
-  overflow: auto;
-  scroll-snap-type: x mandatory;
   display:inline-flex;
   flex-wrap:wrap;
-  top:110%;
+  top:120%;
   position: absolute;
-  left:20%;
+  left:18%;
+  height:620px;
 }
 .favouritesongs img{
   margin: 4%;
@@ -127,15 +137,16 @@ code {
 }
 .Playlists{
   width:80%;
-  top:170%;
+  top:185%;
   position: absolute;
-  left:20%;
+  left:18%;
   height:100%;
+  color: #F8EFE4;
 }
 .create_playlist{
   position: absolute;
-  left:20%;
-  background-color: orange;
+  left:18%;
+  background-color: #FAD02C;
   font-size: 40px;
   border-radius: 50%;
   color: aliceblue;
@@ -161,6 +172,7 @@ code {
   font-size: 45px;
   display: flex;
   flex-wrap: wrap;
+
 }
 .AddFavs{
   background-color: transparent;
@@ -169,7 +181,7 @@ code {
   border: none;
 }
 .Addtopl{
-  background-color: orange;
+  background-color: #FAD02C;
   padding:3%;
   border-radius: 20px;
   font-weight: 600;
@@ -187,7 +199,17 @@ code {
   color:rgba(255, 255, 0, 0.511)
 }
 .lsh{
+  color: #F8EFE4;
   cursor:default;
   position: absolute;
 }
-
+::-webkit-scrollbar {
+  width: 10px;
+  height: 40px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #FAD02C;
+}

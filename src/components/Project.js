@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 import axios from 'axios'
 import { useState } from 'react'
 
-function Navbar(){
+function Project(){
     // All the different States used for the project ->
 
 
@@ -23,7 +23,7 @@ function Navbar(){
         const options = {
             method: 'GET',
             url: 'https://shazam.p.rapidapi.com/charts/track',
-            params: {locale: 'en-US', pageSize: '5', startFrom: '0'},
+            params: {locale: 'en-US', pageSize: '10', startFrom: '0'},
             headers: {
               'X-RapidAPI-Key': 'cd28ad8b44mshcc1effd9b5e2cdfp126aedjsn8167bffaf849',
               'X-RapidAPI-Host': 'shazam.p.rapidapi.com'
@@ -126,7 +126,7 @@ function Navbar(){
     const addToPlaylist = (i)=>{
         const s = onLoadsongs[i].title;
         const img = onLoadsongs[i].images.coverart;
-        const p = prompt("enter name of pl");
+        const p = prompt("name of Playlist to into which song is to be added");
         for(let j=0;j<userPlaylists.length;j++){
             if(p==userPlaylists[j].pname){
                 const pl = userPlaylists[j].pname
@@ -134,6 +134,7 @@ function Navbar(){
                 setpldata(temp)
                 localStorage.setItem('addtopl',JSON.stringify(plswithdata));
                 // console.log(plswithdata)
+                break;
             }
             else{
                 alert("playlist not found")
@@ -146,7 +147,7 @@ function Navbar(){
 
 
     const createPlaylist = () =>{
-        const temp = prompt("Please enter the name of the playlist")
+        const temp = prompt("Please enter the name new of playlist to be added")
         const temp1 = userPlaylists.concat({'pname':temp})
         setPlaylist(temp1)
         localStorage.setItem('playlists', JSON.stringify(userPlaylists));
@@ -211,8 +212,10 @@ function Navbar(){
                     {
                         onLoadsongs.map((songs,i)=>(
                             <div className='songCard'>
-                                <input className="AddFavs" type ="button" onClick={()=>{addToFavs(i)}} value="★"></input>
-                                <input className="Addtopl" type ="button" onClick={()=>{addToPlaylist(i)}} value="Add to playlist"></input>
+                                <div className='btns'>
+                                    <input className="AddFavs" type ="button" onClick={()=>{addToFavs(i)}} value="★"></input>
+                                    <input className="Addtopl" type ="button" onClick={()=>{addToPlaylist(i)}} value="Add to playlist"></input>
+                                </div>
                                 <img src={`${songs.images.coverart}`}></img>
                                 <p>{songs.title}</p>
                             </div>
@@ -220,7 +223,8 @@ function Navbar(){
                     }
                 </div>
                 <div className='favouritesongs'>
-                    <h1 className='lsh'>Your favorites<hr></hr></h1>       
+                    <h1 className='lsh'>Your favorites<hr></hr></h1>
+                    
                     {
                         Favorites.map((songs,i)=>(
                             <div className='songCard'>
@@ -242,7 +246,7 @@ function Navbar(){
                                         plswithdata.map((pls)=>{
                                             if(pls.plname==pl.pname){
                                                 return(
-                                                    <div className='songCard' style={{paddingTop:'2%'}}>
+                                                    <div className='songCard' style={{paddingTop:'2%',color:'black'}}>
                                                         <img src={`${pls.coverart}`} style={{width:'90%',height:'80%',margintop:'13%',borderRadius:'15px'}}></img>
                                                         <p>{pls.name}</p>
                                                     </div>)}
@@ -258,4 +262,4 @@ function Navbar(){
     )
 }
 
-export default Navbar
+export default Project
