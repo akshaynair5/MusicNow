@@ -25,7 +25,7 @@ function Project(){
             url: 'https://shazam.p.rapidapi.com/charts/track',
             params: {locale: 'en-US', pageSize: '10', startFrom: '0'},
             headers: {
-              'X-RapidAPI-Key': 'cd28ad8b44mshcc1effd9b5e2cdfp126aedjsn8167bffaf849',
+              'X-RapidAPI-Key': 'fe28af6361mshbaa6f8197e780b0p1116aejsn7247a5369aaa',
               'X-RapidAPI-Host': 'shazam.p.rapidapi.com'
             }
           };
@@ -48,6 +48,9 @@ function Project(){
         const pldata = JSON.parse(localStorage.getItem('addtopl'))
         if(pldata){
             setpldata(pldata);
+        }
+        return()=>{
+            
         }
     },[])
 
@@ -123,7 +126,7 @@ function Project(){
     // Function thta adds songs to the playlist on press
 
 
-    const addToPlaylist = (i)=>{
+    const addToPlaylist = async (i)=>{
         const s = onLoadsongs[i].title;
         const img = onLoadsongs[i].images.coverart;
         const p = prompt("name of Playlist to into which song is to be added");
@@ -147,10 +150,11 @@ function Project(){
 
 
     const createPlaylist = () =>{
-        const temp = prompt("Please enter the name new of playlist to be added")
+        const temp = prompt("Please enter the name of the new playlist to be added")
         const temp1 = userPlaylists.concat({'pname':temp})
         setPlaylist(temp1)
-        localStorage.setItem('playlists', JSON.stringify(userPlaylists));
+        localStorage.setItem('playlists', JSON.stringify(userPlaylists))
+        console.log(userPlaylists);
     }
 
     // adds the searched songs if pressed to the favorites list
@@ -229,7 +233,7 @@ function Project(){
                         Favorites.map((songs,i)=>(
                             <div className='songCard'>
                                 <input className="Addtopl" type ="button" onClick={()=>{addToPlaylist(i)}} value="Add to playlist" style={{marginTop:'5%'}}></input>
-                                <img src={`${songs.coverart}`}></img>
+                                <img src={`${songs.coverart}`} style={{width:'260px'}}></img>
                                 <p>{songs.name}</p>
                             </div>
                         ))

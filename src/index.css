@@ -123,7 +123,6 @@ code {
   white-space: nowrap;
   width:80%;
   display:inline-flex;
-  flex-wrap:wrap;
   top:120%;
   position: absolute;
   left:18%;
@@ -137,7 +136,7 @@ code {
 }
 .Playlists{
   width:80%;
-  top:185%;
+  top:200%;
   position: absolute;
   left:18%;
   height:fit-content;
