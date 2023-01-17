@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+screenshots and Features of the website.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1)Home page -
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/108605741/212973662-8c8ff671-cb73-4b49-9e0a-92be0073f62f.png">
 
-## Available Scripts
+2)Searching for songs with the search bar - 
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/108605741/212974369-44b48844-07a6-4a5e-be32-2c509c1180d5.png">
 
-In the project directory, you can run:
+3)Adding songs to the favorite songs list - 
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/108605741/212974517-9e518c05-7209-4943-8b50-38695e79571a.png">
+Pressing the star bitton will add the selected song to the favorites list
 
-### `npm start`
+4)Adding new playlist-
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/108605741/212974708-d3f8326a-016b-43bb-8f01-1f97fd32902a.png">
+pressing the '+' button will help you create a playlist to which you can add songs by pressing the 'Add to playlist' button above each song.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+4.1)Creating new playlist and adding a song into it - 
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/108605741/212977035-57129efd-8ac8-496c-a679-821a93a709a1.png">
+A song can be added to a particular user created playlist by pressing the 'add to playlist' button after which a prompt will pop up asking to which playlist the song is to be added 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+5)The user data and preferences are stored using the localStorage.It is used to store the user playlist,Favorites and playlist. Which are all stored within different States.Hence upon refreshing or closing the website no data is lost.
 
-### `npm test`
+Unfortunately I could not implement KeyCloak for authentication as the software could not be installed in my device within the specified time, I tried
+updating my version of JAVA, changing the JAVA_HOME environment variable and many other ways but still at the end could not implement it. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
