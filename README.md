@@ -25,8 +25,5 @@ A song can be added to a particular user created playlist by pressing the 'add t
 
 5)The user data and preferences are stored using the localStorage.It is used to store the user playlist,Favorites and playlist. Which are all stored within different States.Hence upon refreshing or closing the website no data is lost.
 
-Unfortunately I could not implement KeyCloak for authentication as the software could not be installed on my device within the specified time, I tried
-updating the version of JAVA within my system, changing the JAVA_HOME environment variable and many other ways but still at the end could not implement it.
-
 
 
