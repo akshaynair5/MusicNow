@@ -188,7 +188,6 @@ function Project(){
                         </div>
                     </div>
                 </div>
-                {/* <h2 className='headings'>New Releases</h2> */}
                 <div className='latestsongs'>
                     <h1 className='lsh'>New Releases <hr></hr></h1>
                     {
