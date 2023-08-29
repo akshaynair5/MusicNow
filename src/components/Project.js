@@ -169,7 +169,6 @@ function Project(){
     }
     return(
         <div className='hero'>
-        {/* code for sidebar */}
             <div className='navbar'>
                 <div className='inputs'>
                     <input value="⌂ Home" type="button" onClick={()=>toTop()}></input>
