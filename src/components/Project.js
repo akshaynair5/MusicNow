@@ -161,7 +161,6 @@ function Project(){
             behavior: 'smooth',
         });
     }
-    // Moves screen to the top
     const toTop = () =>{
         window.scrollTo({
             top:0,
