@@ -155,7 +155,6 @@ function Project(){
         });
     }
 
-    // Moves screen to Playlists
     const toPlaylists = ()=>{
         window.scrollTo({
             top: 1400,
