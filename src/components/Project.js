@@ -147,7 +147,6 @@ function Project(){
         setFavorites(newList);
     }
 
-    // Moves screen to Favorites 
 
     const toFavourites = ()=>{
         window.scrollTo({
