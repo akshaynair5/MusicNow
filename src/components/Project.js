@@ -141,8 +141,6 @@ function Project(){
         console.log(userPlaylists);
     }
 
-    // adds the searched songs if pressed to the favorites list
-
 
     const SearchFavs = () =>{
         const newList = Favorites.concat({'name':searchRes,'coverart':searchImg});
