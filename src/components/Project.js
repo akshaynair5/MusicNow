@@ -132,8 +132,6 @@ function Project(){
         }
     }
 
-    // Creates a playlist on the user defined name
-
 
     const createPlaylist = () =>{
         const temp = prompt("Please enter the name of the new playlist to be added")
