@@ -123,7 +123,6 @@ function Project(){
                 const temp = plswithdata.concat({ plname:pl,'name':s,'coverart':img})
                 setpldata(temp)
                 localStorage.setItem('addtopl',JSON.stringify(plswithdata));
-                // console.log(plswithdata)
                 break;
             }
             else if(p!=userPlaylists[j].pname){
