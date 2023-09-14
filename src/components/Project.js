@@ -111,7 +111,6 @@ function Project(){
         alert(`${s} Added to favorites`);
     }
 
-    // Function thta adds songs to the playlist on press
 
 
     const addToPlaylist = async (i)=>{
