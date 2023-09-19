@@ -102,9 +102,6 @@ function Project(){
 
 
 
-    // Function that adds your song to the favorite list on press
-
-
     const addToFavs = (i)=>{
         const s = onLoadsongs[i].title;
         const img = onLoadsongs[i].images.coverart;
