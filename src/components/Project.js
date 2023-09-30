@@ -50,8 +50,6 @@ function Project(){
         }
     },[])
 
-    // Function that brings up the search bar on button Press
-
 
     const SearchPop = () =>{
         if(searchbarvis == "hidden"){
@@ -70,9 +68,6 @@ function Project(){
             document.getElementById('srres').style.visibility = "hidden";
         }
     }
-
-
-    // Function that calls the API to serach for the song that was typed in the search bar
 
 
 
