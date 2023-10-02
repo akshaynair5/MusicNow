@@ -33,7 +33,6 @@ function Project(){
           }).catch(function (error) {
               console.error(error);
           });
-        // trending playlists being called
         const Favs = JSON.parse(localStorage.getItem('Favorites'))
         if(Favs){
             setFavorites(Favs);
