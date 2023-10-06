@@ -30,7 +30,6 @@ function Project(){
           
           axios.request(options).then(function (response) {
               setOnLoadSongs(response.data.tracks)
-            //   console.log(response.data.tracks);
           }).catch(function (error) {
               console.error(error);
           });
