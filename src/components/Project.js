@@ -15,7 +15,6 @@ function Project(){
     const [userPlaylists,setPlaylist] = useState([])
     const [plswithdata,setpldata] = useState([])
 
-    // Initialization of values needed and first call of API for initial trending songs
 
 
     useEffect(()=>{
