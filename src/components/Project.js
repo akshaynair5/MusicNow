@@ -4,7 +4,6 @@ import axios from 'axios'
 import { useState } from 'react'
 
 function Project(){
-    // All the different States used for the project ->
 
 
     const [onLoadsongs,setOnLoadSongs] = useState([])
